@@ -1,0 +1,30 @@
+aside {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  > a {
+    text-decoration: none;
+    color: black;
+    background-color: #ccc;
+    padding: 8px;
+  }
+  > a:hover {
+    background-color: rgb(119, 115, 115);
+  }
+}
+aside.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  aside {
+    width:200px ;
+  }
+  aside.hidden {
+    display: block;
+  }
+}

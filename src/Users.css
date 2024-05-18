@@ -1,0 +1,14 @@
+div.userHolder {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  a.user {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    font-weight: bold;
+    background-color: #ccc;
+    text-decoration: none;
+    color: black;
+  }
