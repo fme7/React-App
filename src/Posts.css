@@ -1,15 +1,16 @@
-div.post{
-    display: flex;
-    background-color: #ccc;
-    margin: 8px;
-   
-    >p{
-    justify-content: space-between;
-    text-decoration: none;
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+a.post {
+  background-color: #ccc;
+  text-decoration: none;
+  padding: 8px;
+  color: black;
+}
 
-}
-}
-div.post:hover{
-    background-color: #929191;
-    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+a.post:hover {
+  background-color: #929191;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
 }

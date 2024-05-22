@@ -1,5 +1,6 @@
 import "./Posts.css";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Posts(props) {
   let [posts, setPosts] = useState([]);
@@ -21,11 +22,9 @@ function Posts(props) {
       {posts.length
         ? posts.map((postObj) => {
             return (
-              <div className="post">
-                <p className="b1">
-                  <b>Title:</b> {postObj.title}
-                </p>
-              </div>
+              <Link to={`/posts/${postObj.id}`} className="post" >
+                <b>Title:</b> {postObj.title}
+              </Link>
             );
           })
         : "There is not any post"}

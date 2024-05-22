@@ -4,6 +4,7 @@ import Aside from "./Aside.js";
 import Home from "./Home.js";
 import Posts from "./Posts.js";
 import Users from "./Users.js";
+import PostDetails from "./PostDetails.js";
 import "./App.css";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -25,7 +26,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/posts" element={<Posts />} />
               <Route path="/users" element={<Users />} />
-              <Route path="*" element={<div>404, Page Not Found :(</div>} />
+              <Route path="/posts/:postId" element={<PostDetails/>} />
+              <Route path="*" element={<div>404, Page Not Found :(</div>} ></Route>
             </Routes>
           </div>
         </main>
